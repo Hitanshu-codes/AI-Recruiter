@@ -28,11 +28,11 @@ import Groq from "groq-sdk";
 ffmpeg.setFfmpegPath(ffmpegPath);
 
 // Initialize OpenAI API client with the provided API key
-const secretKey = "sk-proj-gzuYJxUkyK8FFflCktm4T3BlbkFJwtyKHi6GgItlPxagWCV5";
+const secretKey = "";
 const openai = new OpenAI({
   apiKey:secretKey,
 });
-const groq = new Groq({ apiKey: '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' });
+const groq = new Groq({ apiKey: '' });
 
 // Variables to store chat history and other components
 let chatHistory = []; // To store the conversation history
@@ -133,7 +133,7 @@ async function streamedAudio(inputText) {
   const headers = {
     "Accept": "audio/mpeg",
     "Content-Type": "application/json",
-    "xi-api-key": "sk_4fda7a2aca0d485d3c5ac497c8cc652b9bbb3aba58b9a116"
+    "xi-api-key": ""
   };
 
   const segments = segmentTextBySentence(inputText);
@@ -201,7 +201,7 @@ async function streamedAudio(inputText) {
 async function transcribeAndChat() {
   // const filePath = "output.mp3";
   // The API key we created in step 3
-  const deepgramApiKey = "9d06d35b079080a65b24c045644bc1cbce9dbcaa";
+  const deepgramApiKey = "";
 
   // Replace with your file path and audio mimetype
   const pathToFile = "output.mp3";
